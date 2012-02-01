@@ -30,6 +30,8 @@ class UsersController extends AppController {
 			throw new NotFoundException(__('Invalid user'));
 		}
 		$this->set('user', $this->User->read(null, $id));
+    $this->set('orders',
+               $this->paginate('Order', array('Order.user_id = ' . $id)));
 	}
 
 /**
