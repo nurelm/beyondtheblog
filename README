@@ -1,8 +1,10 @@
+This project corresponds to the tutorial located at
+
+http://www.nurelm.com/themanual/2012/01/26/cakephp-beyond-the-blog-tutorial-part-i/
+
 CakePHP is a great rapid development framework, and the blog tutorial is a fine
 starting point on any journey to learn it.  A tutorial covering a few more of
 the dirty realities of an actual project would have been a welcome next step in
 my first CakePHP encounter.  This series aspires to being that next step.
 
-This project corresponds to the tutorial located at
-
-http://www.nurelm.com/themanual/2012/01/26/cakephp-beyond-the-blog-tutorial-part-i/
+Remember to edit app/Config/database.php to match your settings.
