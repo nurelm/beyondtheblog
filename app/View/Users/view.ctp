@@ -86,7 +86,7 @@
 
   <div class="actions">
     <ul>
-      <li><?php echo $this->Html->link(__('New Order'), array('controller' => 'orders', 'action' => 'add_to_user', $user['User']['id'])); ?> </li>
+      <li><?php echo $this->Html->link(__('New Order'), array('controller' => 'orders', 'action' => 'add', $user['User']['id'])); ?> </li>
     </ul>
   </div>
 </div>

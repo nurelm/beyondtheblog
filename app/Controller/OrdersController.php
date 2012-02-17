@@ -38,7 +38,7 @@ class OrdersController extends AppController {
    *
    * @return void
    */
-  public function add() {
+  public function add($user_id = null) {
     if ($this->request->is('post')) {
       $this->Order->create();
       if ($this->Order->save($this->request->data)) {
@@ -48,8 +48,7 @@ class OrdersController extends AppController {
         $this->Session->setFlash(__('The order could not be saved. Please, try again.'));
       }
     }
-    $users = $this->Order->User->find('list');
-    $this->set(compact('users'));
+    $this->request->data['Order']['user_id'] = $user_id;
   }
 
   public function add_to_user($user_id) {
